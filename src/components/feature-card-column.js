@@ -26,18 +26,20 @@ const styles = {
     flexDirection: 'column',
     mb: -1,
     textAlign: ['center', null, 'left'],
-    px: [4, null, 0],
+    px: [4, null, 0]
   },
   img: {
     mx: ['auto', null, 0],
-    ml: ['auto', null, '-13px'],
+    ml: ['auto', null, '-8px', '-8px', '-8px', '-8px'],
     mb: -2,
     width: ['80px', null, null, '90px', null, 'auto'],
+    height: '80px'
   },
   wrapper: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
+    pt: '20px',
     title: {
       fontSize: 3,
       color: 'heading_secondary',

@@ -3,41 +3,41 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
+import Car from 'assets/key-feature/car.png';
+import Calendar from 'assets/key-feature/calendar.png';
+import Customize from 'assets/key-feature/customize.png';
+import DirectBilling from 'assets/key-feature/direct-billing.png';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    imgSrc: Car,
+    altText: 'Mobile',
+    title: 'Mobile',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    imgSrc: Calendar,
+    altText: 'Flexible',
+    title: 'Flexible',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    imgSrc: Customize,
+    altText: 'Customize',
+    title: 'Customized',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    imgSrc: DirectBilling,
+    altText: 'DirectBilling',
+    title: 'Direct Billing',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
@@ -48,8 +48,8 @@ export default function KeyFeature() {
     <section sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Meet the feature of product"
+          slogan="Our Services"
+          title="Insurance-covered mobile health care"
         />
 
         <Grid sx={styles.grid}>

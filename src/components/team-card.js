@@ -33,7 +33,7 @@ const styles = {
     py: [0, null, 4, 5, 6],
     px: [2, null, 6, 7],
     transition: 'ease-in-out 0.4s',
-    borderRadius: '8px',
+    borderRadius: '10px',
     position: 'relative',
     '&:hover': {
       boxShadow: ['none', null, '0 4px 10px rgba(39, 83, 123, 0.12)'],
@@ -54,12 +54,12 @@ const styles = {
   },
 
   memberThumb: {
-    width: ['70px', '80px', '100px', null, null, '130px'],
+    width: ['70px', '80px', '80px', null, null, '130px'],
     height: ['70px', '80px', '100px', null, null, '130px'],
     flexShrink: 0,
-    border: '2px solid',
-    borderColor: 'primary',
-    borderRadius: '50%',
+    // border: '2px solid',
+    // borderColor: 'primary',
+    // borderRadius: '80%',
   },
   infoWrapper: {
     width: '100%',

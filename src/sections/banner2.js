@@ -28,14 +28,14 @@ const Banner = () => {
         <Flex sx={styles.banner.row}>
           <Box sx={styles.banner.col}>
             <Box sx={styles.banner.content}>
-              <Box sx={styles.banner.stars}>
+              {/* <Box sx={styles.banner.stars}>
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 Trused by over 4,332 students
-              </Box>
+              </Box> */}
               <Heading as="h3">
                 Learn Design <br />
                 with Nia Matos
@@ -45,7 +45,7 @@ const Banner = () => {
                 from the victory of the managments that supplies best <br />
                 design system guidelines ever.
               </Text>
-              <Box as="form" sx={styles.banner.form}>
+              {/* <Box as="form" sx={styles.banner.form}>
                 <Box as="label" htmlFor="search" variant="styles.srOnly">
                   Search
                 </Box>
@@ -62,7 +62,7 @@ const Banner = () => {
                 >
                   <IoIosSearch />
                 </Button>
-              </Box>
+              </Box> */}
               <Box sx={styles.banner.partner}>
                 <span>Sponsored by:</span>
                 <Image src={PartnerImage} alt="banner image" />

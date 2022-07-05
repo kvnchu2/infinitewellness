@@ -116,7 +116,7 @@ export default {
     },
   },
   sectionHeader: {
-    width: ['100%', null, '540px'],
+    width: ['100%', null, '700px'],
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
