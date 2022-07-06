@@ -18,7 +18,7 @@ import { IoIosSearch } from 'react-icons/io';
 import BannerBG from 'assets/banner-bg-1-1.png';
 import BannerTextLine from 'assets/banner-text-line.png';
 import BannerPattern from 'assets/banner-pattern.png';
-import BannerImage from 'assets/banner-image-1.png';
+import Wellness from 'assets/wellness.jpg';
 import PartnerImage from 'assets/brands.svg';
 
 const Banner = () => {
@@ -65,14 +65,14 @@ const Banner = () => {
               </Box> */}
               <Box sx={styles.banner.partner}>
                 <span>Sponsored by:</span>
-                <Image src={PartnerImage} alt="banner image" />
+                <Image src={PartnerImage} alt="banner image" sx={styles.banner.image}/>
               </Box>
             </Box>
           </Box>
           <Box sx={styles.banner.col}>
             <Box sx={styles.banner.imageBox}>
               <Box sx={styles.banner.imageInner}>
-                <Image src={BannerImage} alt="banner image" />
+                <Image src={Wellness} alt="banner image" />
                 <VideoBtn path="L9jU-IIN0ng" />
               </Box>
             </Box>
@@ -108,10 +108,10 @@ const styles = {
     col: {
       pl: '15px',
       pr: '15px',
-      flex: ['1 1 100%', null, '0 0 50%'],
+      flex: ['1 1 100%', null, '0 0 50%']
     },
     content: {
-      paddingRight: [0, 0, 0, 0, '40px', 0, 0],
+      paddingLeft: ['40px', '5px', '5px', '5px', '5px', '5px', '5px'],
       h3: {
         lineHeight: 1.18,
         color: 'black',
@@ -221,7 +221,8 @@ const styles = {
     imageBox: {
       display: 'flex',
       justifyContent: ['flex-start', null, null, 'flex-end'],
-      marginTop: ['60px', null, null, '0'],
+      marginTop: ['60px', null, null, '0'], 
+      height: '500px'
     },
     imageInner: {
       position: 'relative',
@@ -239,7 +240,7 @@ const styles = {
         '@media(max-width: 991px)': {
           left: '10px',
           top: '15px',
-          height: 'calc(100% - 15px)',
+          height: 'calc(100% - 15px)'
         },
       },
       '&:after': {
@@ -260,6 +261,7 @@ const styles = {
         position: 'relative',
         zIndex: 9,
         maxWidth: '100%',
+        height:'500px'
       },
       '.videoBtn': {
         position: 'absolute',
