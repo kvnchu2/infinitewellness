@@ -1,6 +1,6 @@
 export default [
   {
-    path: 'home',
+    path: 'banner',
     label: 'Home',
   },
   {
@@ -10,10 +10,6 @@ export default [
   {
     path: 'teamsection',
     label: 'Team',
-  },
-  {
-    path: 'pricing',
-    label: 'Pricing',
   },
   {
     path: 'testimonial',

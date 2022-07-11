@@ -37,8 +37,7 @@ const Banner = () => {
                 Trused by over 4,332 students
               </Box> */}
               <Heading as="h3">
-                Learn Design <br />
-                with Nia Matos
+                Infinite Wellness
               </Heading>
               <Text as="p">
                 Get your blood tests delivered at let home collect sample <br />
@@ -94,7 +93,7 @@ const styles = {
       'linear-gradient(-180deg, #E0F5FA 0%, #FFFDE6 100%)',
       `url(${BannerBG})`,
     ],
-    backgroundPosition: 'left top',
+    // backgroundPosition: 'left top',
     backgroundRepeat: 'no-repeat',
     container: {
       maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
@@ -106,7 +105,7 @@ const styles = {
       marginRight: '-15px',
     },
     col: {
-      pl: '15px',
+      pl: '120px',
       pr: '15px',
       flex: ['1 1 100%', null, '0 0 50%']
     },
@@ -217,12 +216,14 @@ const styles = {
         marginLeft: ['0', '0px', null, null, null, '20px'],
         mt: ['20px', null, null, null, null, '0'],
       },
+      pt: '25px'
     },
     imageBox: {
       display: 'flex',
       justifyContent: ['flex-start', null, null, 'flex-end'],
       marginTop: ['60px', null, null, '0'], 
-      height: '500px'
+      height: '500px',
+      pr: '120px'
     },
     imageInner: {
       position: 'relative',
