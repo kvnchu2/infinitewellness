@@ -460,14 +460,16 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: rgba(255, 255, 255, 0.75);
+  /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
+  background: linear-gradient(to right, #b0e0e6	 0%, #b0e0e6	 100%);
+  color: black;
 }
 #contact .section-title {
   margin-bottom: 40px;
 }
 #contact .section-title p {
   font-size: 16px;
+  color: rgba(2,7,62,.6);
 }
 #contact h2 {
   color:black;
@@ -485,7 +487,7 @@ header .intro-text {
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
+  color: black;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -550,11 +552,17 @@ label {
 }
 #contact .contact-item {
   margin: 20px 0;
+  color: black;
 }
+
 #contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
+  color: black;
   margin-bottom: 10px;
   display: block;
+}
+
+#contact .contact-item p {
+  color: rgba(2,7,62,.6);
 }
 #contact .contact-item i.fa {
   margin-right: 10px;
