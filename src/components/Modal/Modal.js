@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import PropTypes from "prop-types";
 import isNil from "lodash/fp/isNil";
-import useStyles from "./Modal";
+import useStyles from "./ModalStyles";
 
 const Modal = ({ onCloseRequest, children }) => {
   const classes = useStyles();
@@ -52,7 +52,7 @@ const Modal = ({ onCloseRequest, children }) => {
         <button
           type="button"
           className={classes.closeButton}
-          onClick={props.onCloseRequest}
+          onClick={onCloseRequest}
         />
         {children}
       </div>
