@@ -1,10 +1,12 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Text, Heading, Image, Box, Link } from 'theme-ui';
+import React, { useState } from 'react';
+import SimpleModal from "./SimpleModal/SimpleModal";
 
 export default function TeamCard({ src, altText, title, designation, social }) {
+
   return (
-    <div onClick={() => console.log("hi there")}>
       <Box sx={styles.card}>
         <Image src={src} alt={altText} sx={styles.memberThumb} />
         <Box sx={styles.infoWrapper}>
@@ -14,6 +16,18 @@ export default function TeamCard({ src, altText, title, designation, social }) {
           <Text className="info__designation" sx={styles.infoWrapper.designation}>
             {designation}
           </Text>
+          <SimpleModal buttonLabel="Read Bio">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus
+              quam, sollicitudin posuere massa lacus cursus ligula. Quisque vel
+              turpis a quam posuere lobortis.
+            </p>
+            <p>
+              Aenean risus nunc, pretium eu massa tincidunt, dignissim tincidunt
+              arcu. Integer et mauris vestibulum, pharetra eros nec, feugiat orci.
+            </p>
+          </SimpleModal>
         </Box>
         <Box sx={styles.socialShare} className="social__share">
           {social.map((item) => (
@@ -23,7 +37,6 @@ export default function TeamCard({ src, altText, title, designation, social }) {
           ))}
         </Box>
       </Box>
-    </div>
   );
 }
 
@@ -106,4 +119,5 @@ const styles = {
       },
     },
   },
+  
 };

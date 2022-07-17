@@ -16,7 +16,8 @@ import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
 import BlogSection from '../sections/blog-section';
 import Subscribe from '../sections/subscribe';
-import { VideoProvider } from '../contexts/video/video.provider'
+import { VideoProvider } from '../contexts/video/video.provider';
+import Contact from '../sections/contact';
 
 export default function IndexPage() {
   return (
@@ -33,6 +34,7 @@ export default function IndexPage() {
             {/* <WorkFlow /> */}
             {/* <Package /> */}
             <TeamSection />
+            <Contact />
             {/* <TestimonialCard />
             <BlogSection />
             <Subscribe /> */}
