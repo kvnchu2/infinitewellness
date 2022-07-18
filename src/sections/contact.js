@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fab, faCheckSquare, faCoffee, faLocationDot)
 
 const initialState = {
   name: '',
@@ -100,9 +106,9 @@ export default function Contact(props)  {
               <h3>Contact Info</h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                <FontAwesomeIcon icon={["fas", "location-dot"]} /> Address
                 </span>
-                {props.data ? props.data.address : 'loading'}
+                2044 Physiotherapy Street, V4C 2I6, Burnaby, BC
               </p>
             </div>
             <div className='contact-item'>
@@ -110,7 +116,7 @@ export default function Contact(props)  {
                 <span>
                   <i className='fa fa-phone'></i> Phone
                 </span>{' '}
-                {props.data ? props.data.phone : 'loading'}
+                236-402-3040
               </p>
             </div>
             <div className='contact-item'>
@@ -118,7 +124,7 @@ export default function Contact(props)  {
                 <span>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
-                {props.data ? props.data.email : 'loading'}
+                contact@infinitewellness.ca
               </p>
             </div>
           </div>
