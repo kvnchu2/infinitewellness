@@ -2,10 +2,10 @@ import { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-library.add(fab, faCheckSquare, faCoffee, faLocationDot)
+library.add(fab, faCheckSquare, faCoffee, faLocationDot, faPhone, faEnvelope)
 
 const initialState = {
   name: '',
@@ -114,7 +114,7 @@ export default function Contact(props)  {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                <FontAwesomeIcon icon={["fas", "phone"]} /> Phone
                 </span>{' '}
                 236-402-3040
               </p>
@@ -122,7 +122,7 @@ export default function Contact(props)  {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-envelope-o'></i> Email
+                <FontAwesomeIcon icon={["fas", "envelope"]} /> Email
                 </span>{' '}
                 contact@infinitewellness.ca
               </p>
