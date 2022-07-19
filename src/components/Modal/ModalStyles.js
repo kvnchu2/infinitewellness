@@ -51,7 +51,7 @@ const useStyles = createUseStyles({
     padding: "1rem",
 
     "@media (min-width: 576px)": {
-      width: "32rem"
+      width: "100rem"
     },
 
     "& p:last-of-type": {

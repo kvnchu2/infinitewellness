@@ -17,15 +17,15 @@ export default function TeamCard({ src, altText, title, designation, social }) {
             {designation}
           </Text>
           <SimpleModal buttonLabel="Read Bio">
-            <h2>Lorem ipsum dolor sit amet</h2>
+            <Image src={src} alt={altText} sx={styles.memberThumb} />
+            <h1>Physiotherapist</h1>
+            
             <p>
-              Nullam tincidunt, nisl eget vestibulum rhoncus, elit nisi faucibus
-              quam, sollicitudin posuere massa lacus cursus ligula. Quisque vel
-              turpis a quam posuere lobortis.
+            Johnny completed his Master’s degree in Physical Therapy at Queen’s University, and bachelor’s degree in Kinesiology at the University of British Columbia. Johnny has also completed two diplomas in General Studies and Sport Science at Douglas College. Johnny’s clinical experience includes time in both public and private settings. Johnny started his career in public practice (hospitals) and private clinics in Kingston and the Greater Toronto Area. In addition to his clinical experience, Johnny spent four years as a behavioral interventionist, and was a research assistant for a Parkinson’s disease and concussion study at UBC. Johnny has a variety of interests including treating patients with MSK (musculoskeletal), cardiopulmonary diseases, neurological conditions, vestibular issues, and concussion. He also enjoys helping patients who have injuries from sports, motor vehicle accidents, and other chronic conditions. In his spare time Johnny enjoys playing basketball, table tennis, tennis and badminton. He also loves volunteering and has spent eight years with organizations geared towards helping those with physical and behavioral challenges such as the Special Olympics and the Vancouver Chinese Policing Center.
             </p>
-            <p>
-              Aenean risus nunc, pretium eu massa tincidunt, dignissim tincidunt
-              arcu. Integer et mauris vestibulum, pharetra eros nec, feugiat orci.
+            <p>Johnny is fluent in English, Cantonese, and Mandarin.</p>
+
+            <p>我可以用广东话交谈 我可以用普通话交谈
             </p>
           </SimpleModal>
         </Box>
