@@ -105,7 +105,7 @@ const styles = {
       marginRight: '-15px',
     },
     col: {
-      pl: '120px',
+      pl: ['0px','120px','120px','120px','120px','120px'],
       pr: '15px',
       flex: ['1 1 100%', null, '0 0 50%']
     },
@@ -248,7 +248,7 @@ const styles = {
         content: '""',
         width: '302px',
         height: '347px',
-        backgroundImage: `url(${BannerPattern})`,
+        backgroundImage: ['null',`url(${BannerPattern})`,`url(${BannerPattern})`,`url(${BannerPattern})`,`url(${BannerPattern})`,`url(${BannerPattern})`],
         backgroundPosition: 'center',
         top: '-30px',
         right: '-73px',

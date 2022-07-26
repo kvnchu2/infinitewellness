@@ -6,6 +6,7 @@ import TeamCard from 'components/team-card';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 import Johnny from 'assets/team/johnny-guan.png';
+import Bruno from 'assets/team/bruno-savino.jpg';
 import Member2 from 'assets/team/member-2.png';
 import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
@@ -19,6 +20,35 @@ const data = [
     altText: 'Johnny Guan',
     title: 'Johnny Guan',
     designation: 'Physiotherapist',
+    languages: 'English, Cantonese, Mandarin',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'facebook',
+        path: '#',
+        icon: <FaFacebookF />,
+      },
+      {
+        id: 2,
+        name: 'twitter',
+        path: '#',
+        icon: <FaTwitter />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: '#',
+        icon: <FaInstagram />,
+      },
+    ],
+  },
+  {
+    id: 1,
+    imgSrc: Bruno,
+    altText: 'Bruno Savino',
+    title: 'Bruno Savino',
+    designation: 'Kinesiologist',
+    languages: 'English, Spanish, Portugese',
     socialProfile: [
       {
         id: 1,
@@ -195,6 +225,7 @@ export default function TeamSection() {
               title={item.title}
               designation={item.designation}
               social={item.socialProfile}
+              languages={item.languages}
             />
           ))}
         </Grid>
