@@ -4,8 +4,8 @@ export default [
     label: 'Home',
   },
   {
-    path: 'services',
-    label: 'Services',
+    path: 'about',
+    label: 'About',
   },
   {
     path: 'teamsection',

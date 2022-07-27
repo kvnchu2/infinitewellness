@@ -20,6 +20,8 @@ import BannerTextLine from 'assets/banner-text-line.png';
 import BannerPattern from 'assets/banner-pattern.png';
 import Wellness from 'assets/wellness.jpg';
 import PartnerImage from 'assets/brands.svg';
+import Bcak from 'assets/bcak-logo.svg';
+import Cptbc from 'assets/logo-cptbc.png';
 
 const Banner = () => {
   return (
@@ -63,8 +65,9 @@ const Banner = () => {
                 </Button>
               </Box> */}
               <Box sx={styles.banner.partner}>
-                <span>Sponsored by:</span>
-                <Image src={PartnerImage} alt="banner image" sx={styles.banner.image}/>
+                <span>Connections: </span>
+                <Image src={Bcak} alt="banner image" sx={styles.banner.image}/>
+                <Image src={Cptbc} alt="banner image" sx={styles.banner.image}/>
               </Box>
             </Box>
           </Box>
@@ -223,7 +226,7 @@ const styles = {
       justifyContent: ['flex-start', null, null, 'flex-end'],
       marginTop: ['60px', null, null, '0'], 
       height: '500px',
-      pr: '120px'
+      pr: ['0px','120px','120px','120px','120px','120px']
     },
     imageInner: {
       position: 'relative',

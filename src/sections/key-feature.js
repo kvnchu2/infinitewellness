@@ -15,7 +15,7 @@ const data = [
     altText: 'Mobile',
     title: 'Mobile',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'No need to visit a clinic! Sessions take place at your home, community center gym, or pool.',
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const data = [
     altText: 'Flexible',
     title: 'Flexible',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Scheduling is convenient to accommodate your availability.',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const data = [
     altText: 'Customize',
     title: 'Customized',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Offering personalized care according to your unique needs.',
   },
   {
     id: 4,
@@ -39,16 +39,16 @@ const data = [
     altText: 'DirectBilling',
     title: 'Direct Billing',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Insurance-covered services billed directly to ICBC, WSBC, MSP and major insurance providers.',
   },
 ];
 
 export default function KeyFeature() {
   return (
-    <section sx={{ variant: 'section.keyFeature' }} id="services">
+    <section sx={{ variant: 'section.keyFeature' }} id="about">
       <Container>
         <SectionHeader
-          slogan="Our Services"
+          slogan="Why people choose us"
           title="Insurance-covered mobile health care"
         />
 
