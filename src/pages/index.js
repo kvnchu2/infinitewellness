@@ -18,6 +18,7 @@ import BlogSection from '../sections/blog-section';
 import Subscribe from '../sections/subscribe';
 import { VideoProvider } from '../contexts/video/video.provider';
 import Contact from '../sections/contact';
+import Services from '../sections/services';
 
 export default function IndexPage() {
   return (
@@ -28,11 +29,12 @@ export default function IndexPage() {
             <SEO title="Startup Landing 005" />
             <Banner />
             <KeyFeature />
-            <ServiceSection />
-            <Feature />
-            <CoreFeature />
-            <WorkFlow />
-            <Package />
+            <Services />
+            {/* <ServiceSection /> */}
+            {/* <Feature /> */}
+            {/* <CoreFeature /> */}
+            {/* <WorkFlow /> */}
+            {/* <Package /> */}
             <TeamSection />
             <Contact />
             {/* <TestimonialCard />

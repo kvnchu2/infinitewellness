@@ -54,7 +54,7 @@ const useStyles = createUseStyles({
     "@media (min-width: 576px)": {
       width: "100rem"
     },
-
+    
     "& p:last-of-type": {
       marginBottom: 0
     }
