@@ -1,4 +1,5 @@
-
+/** @jsxRuntime classic */
+/** @jsx jsx */
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
