@@ -16,17 +16,17 @@ export default function TeamCard({ src, altText, title, designation, social, lan
           <Text className="info__designation" sx={styles.infoWrapper.designation}>
             {designation}
           </Text>
-          <SimpleModal buttonLabel="Read Bio">
+          <SimpleModal  buttonLabel="Learn More">
             <Image src={src} alt={altText} sx={styles.memberThumb} />
             <h1>{designation}</h1>
             
             <p>
-            Johnny completed his Master’s degree in Physical Therapy at Queen’s University, and bachelor’s degree in Kinesiology at the University of British Columbia. Johnny has also completed two diplomas in General Studies and Sport Science at Douglas College. Johnny’s clinical experience includes time in both public and private settings. Johnny started his career in public practice (hospitals) and private clinics in Kingston and the Greater Toronto Area. In addition to his clinical experience, Johnny spent four years as a behavioral interventionist, and was a research assistant for a Parkinson’s disease and concussion study at UBC. Johnny has a variety of interests including treating patients with MSK (musculoskeletal), cardiopulmonary diseases, neurological conditions, vestibular issues, and concussion. He also enjoys helping patients who have injuries from sports, motor vehicle accidents, and other chronic conditions. In his spare time Johnny enjoys playing basketball, table tennis, tennis and badminton. He also loves volunteering and has spent eight years with organizations geared towards helping those with physical and behavioral challenges such as the Special Olympics and the Vancouver Chinese Policing Center.
+            Coming soon!
             </p>
-            <p>{title} is fluent in {languages}.</p>
+            {/* <p>{title} is fluent in {languages}.</p> */}
 
-            <p>我可以用广东话交谈 我可以用普通话交谈
-            </p>
+            {/* <p>我可以用广东话交谈 我可以用普通话交谈
+            </p> */}
           </SimpleModal>
         </Box>
         <Box sx={styles.socialShare} className="social__share">
@@ -41,6 +41,9 @@ export default function TeamCard({ src, altText, title, designation, social, lan
 }
 
 const styles = {
+  button: {
+    mt: '100px'
+  },
   card: {
     display: 'flex',
     alignItems: 'center',
@@ -69,8 +72,8 @@ const styles = {
   },
 
   memberThumb: {
-    width: ['70px', '80px', '80px', null, null, '130px'],
-    height: ['70px', '80px', '100px', null, null, '130px'],
+    width: ['70px', '80px', '80px', null, null, '140px'],
+    height: ['70px', '80px', '100px', null, null, '150px'],
     flexShrink: 0,
     // border: '2px solid',
     // borderColor: 'primary',

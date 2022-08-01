@@ -48,7 +48,7 @@ export default function KeyFeature() {
     <section sx={{ variant: 'section.keyFeature' }} id="about">
       <Container>
         <SectionHeader
-          slogan="Why people choose us"
+          slogan="Why patients choose us"
           title="Insurance-covered mobile health care"
         />
 

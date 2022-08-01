@@ -42,9 +42,7 @@ const Banner = () => {
                 Infinite Wellness
               </Heading>
               <Text as="p">
-                Get your blood tests delivered at let home collect sample <br />
-                from the victory of the managments that supplies best <br />
-                design system guidelines ever.
+                Combining passion and knowledge to heal.
               </Text>
               {/* <Box as="form" sx={styles.banner.form}>
                 <Box as="label" htmlFor="search" variant="styles.srOnly">
@@ -67,7 +65,7 @@ const Banner = () => {
               <Box sx={styles.banner.partner}>
                 <span>Connections: </span>
                 <Image src={Bcak} alt="banner image" sx={styles.banner.image}/>
-                <Image src={Cptbc} alt="banner image" sx={styles.banner.image}/>
+                <Image src={Cptbc} alt="banner image" sx={styles.banner.image.cptbc}/>
               </Box>
             </Box>
           </Box>
@@ -75,7 +73,7 @@ const Banner = () => {
             <Box sx={styles.banner.imageBox}>
               <Box sx={styles.banner.imageInner}>
                 <Image src={Wellness} alt="banner image" />
-                <VideoBtn path="L9jU-IIN0ng" />
+                {/* <VideoBtn path="L9jU-IIN0ng" /> */}
               </Box>
             </Box>
           </Box>
@@ -89,6 +87,12 @@ export default Banner;
 
 const styles = {
   banner: {
+    image: {
+      height: '60px',
+      cptbc: {
+        height: '50px'
+      }
+    },
     overflowX: 'hidden',
     paddingTop: ['100px', '120px'],
     paddingBottom: ['0px', null, '80px'],
@@ -219,7 +223,7 @@ const styles = {
         marginLeft: ['0', '0px', null, null, null, '20px'],
         mt: ['20px', null, null, null, null, '0'],
       },
-      pt: '25px'
+      pt: '60px'
     },
     imageBox: {
       display: 'flex',

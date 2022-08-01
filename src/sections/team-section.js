@@ -9,6 +9,7 @@ import Johnny from 'assets/team/johnny-guan.png';
 import Bruno from 'assets/team/bruno-savino.jpg';
 import Patrick from 'assets/team/patrick-tung.png';
 import Eunice from 'assets/team/eunice-lu.png';
+import Dilek from 'assets/team/dilek-kacar.png';
 import Member2 from 'assets/team/member-2.png';
 import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
@@ -74,9 +75,37 @@ const data = [
   },
   {
     id: 1,
+    imgSrc: Eunice,
+    altText: 'Eunice Lu',
+    title: 'Eunice Lu',
+    designation: 'Physiotherapist',
+    languages: 'English, Spanish, Portugese',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'facebook',
+        path: '#',
+        icon: <FaFacebookF />,
+      },
+      {
+        id: 2,
+        name: 'twitter',
+        path: '#',
+        icon: <FaTwitter />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: '#',
+        icon: <FaInstagram />,
+      },
+    ],
+  },
+  {
+    id: 1,
     imgSrc: Patrick,
-    altText: 'Bruno Savino',
-    title: 'Bruno Savino',
+    altText: 'Patrick Tung',
+    title: 'Patrick Tung',
     designation: 'Kinesiologist',
     languages: 'English, Spanish, Portugese',
     socialProfile: [
@@ -102,10 +131,10 @@ const data = [
   },
   {
     id: 1,
-    imgSrc: Eunice,
-    altText: 'Bruno Savino',
-    title: 'Bruno Savino',
-    designation: 'Kinesiologist',
+    imgSrc: Dilek,
+    altText: 'Dilek Kacar',
+    title: 'Dilek Kacar',
+    designation: 'Physiotherapist',
     languages: 'English, Spanish, Portugese',
     socialProfile: [
       {
@@ -127,7 +156,7 @@ const data = [
         icon: <FaInstagram />,
       },
     ],
-  }
+  },
   // {
   //   id: 2,
   //   imgSrc: Member2,

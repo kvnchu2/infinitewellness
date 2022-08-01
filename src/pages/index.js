@@ -26,7 +26,7 @@ export default function IndexPage() {
       <StickyProvider>
         <VideoProvider>
           <Layout>
-            <SEO title="Startup Landing 005" />
+            <SEO title="Infinite Wellness" />
             <Banner />
             <KeyFeature />
             <Services />

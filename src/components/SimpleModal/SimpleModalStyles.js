@@ -6,7 +6,8 @@ const useStyles = createUseStyles({
 
     "& + &": {
       marginBottom: 0
-    }
+    },
+    marginTop: "10px"
   },
 
   modalButton: {
@@ -20,7 +21,7 @@ const useStyles = createUseStyles({
 
     "&:hover": {
       backgroundColor: "#424f63"
-    }
+    },
   }
 });
 

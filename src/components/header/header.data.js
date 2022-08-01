@@ -8,6 +8,10 @@ export default [
     label: 'About',
   },
   {
+    path: 'services',
+    label: 'Services',
+  },
+  {
     path: 'teamsection',
     label: 'Team',
   },
@@ -15,4 +19,5 @@ export default [
     path: 'contact',
     label: 'Contact',
   },
+  
 ];
