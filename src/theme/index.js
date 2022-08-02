@@ -58,14 +58,15 @@ export default {
   layout: {
     container: {
       maxWidth: [
-        '100%',
-        null,
-        null,
-        '780px',
-        '1020px',
-        '1200px',
-        null,
-        '1310px',
+        // '100%',
+        // null,
+        // null,
+        // '780px',
+        // '1020px',
+        // '1200px',
+        // null,
+        // '1310px',
+        '85%'
       ],
       px: [4, 6],
     },

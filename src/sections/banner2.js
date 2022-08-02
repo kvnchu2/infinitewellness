@@ -99,12 +99,13 @@ const styles = {
     paddingBottom: ['0px', null, '80px'],
     backgroundImage: [
       'linear-gradient(-180deg, #E0F5FA 0%, #FFFDE6 100%)',
-      `url(${BannerBG})`,
+      // `url(${BannerBG})`,
     ],
     // backgroundPosition: 'left top',
     backgroundRepeat: 'no-repeat',
     container: {
-      maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
+      // maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
+      maxWidth: '100'
     },
     row: {
       flexWrap: 'wrap',
