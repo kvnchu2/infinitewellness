@@ -7,6 +7,7 @@ import 'rc-drawer/assets/index.css';
 import 'typeface-dm-sans';
 import '../styles/contact.css';
 import '../styles/bootstrap.css';
+import 'react-responsive-modal/styles.css';
 
 
 export default function CustomApp({ Component, pageProps }) {

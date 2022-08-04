@@ -74,7 +74,7 @@ const Banner = () => {
             <Box sx={styles.banner.imageBox}>
               <Box sx={styles.banner.imageInner}>
                 <Image src={Wellness} alt="banner image" />
-                {/* <VideoBtn path="L9jU-IIN0ng" /> */}
+                <VideoBtn path="L9jU-IIN0ng" />
               </Box>
             </Box>
           </Box>
@@ -104,7 +104,7 @@ const styles = {
     // backgroundPosition: 'left top',
     backgroundRepeat: 'no-repeat',
     container: {
-      // maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
+      maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
       maxWidth: '100'
     },
     row: {
