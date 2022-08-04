@@ -39,30 +39,12 @@ const Banner = () => {
                 <FaStar />
                 Trused by over 4,332 students
               </Box> */}
-              <Heading as="h3">
-                Infinite Wellness
-              </Heading>
-              <Text as="p">
+              <Heading as="h1">
                 Combining passion and knowledge to heal.
-              </Text>
-              {/* <Box as="form" sx={styles.banner.form}>
-                <Box as="label" htmlFor="search" variant="styles.srOnly">
-                  Search
-                </Box>
-                <Input
-                  name="search"
-                  id="search"
-                  placeholder="Search Course Name"
-                  sx={styles.banner.form.input}
-                />
-                <Button
-                  type="submit"
-                  aria-label="search btn"
-                  sx={(styles.banner.form.button, { color: '#02073E' })}
-                >
-                  <IoIosSearch />
-                </Button>
-              </Box> */}
+              </Heading>
+              {/* <Text as="p">
+                Combining passion and knowledge to heal.
+              </Text> */}
               <Box sx={styles.banner.partner}>
                 <span>Connections: </span>
                 <Image src={Bcak} alt="banner image" sx={styles.banner.image}/>
@@ -120,13 +102,13 @@ const styles = {
     },
     content: {
       paddingLeft: ['40px', '5px', '5px', '5px', '5px', '5px', '5px'],
-      h3: {
+      h1: {
         lineHeight: 1.18,
         color: 'black',
         fontWeight: 'bold',
         position: 'relative',
         width: '100%',
-        fontSize: ['28px', '35px', null, '45px', null, '50px', '85px'],
+        fontSize: ['23px', '30px', null, '40px', null, '45px', '60px'],
         maxWidth: ['500px', null, null, null, null, null, '100%'],
         '&:before': {
           content: '""',
@@ -225,7 +207,7 @@ const styles = {
         marginLeft: ['0', '0px', null, null, null, '20px'],
         mt: ['20px', null, null, null, null, '0'],
       },
-      pt: '60px'
+      pt: '80px'
     },
     imageBox: {
       display: 'flex',

@@ -3,7 +3,6 @@
 import { jsx } from 'theme-ui';
 import { Text, Heading, Image, Box, Link } from 'theme-ui';
 import React, { useState } from 'react';
-import SimpleModal from "./SimpleModal/SimpleModal";
 
 import { Modal } from 'react-responsive-modal';
 import ReactDOM from 'react-dom';
@@ -25,18 +24,6 @@ export default function TeamCard({ src, altText, title, designation, social, lan
           <Text className="info__designation" sx={styles.infoWrapper.designation}>
             {designation}
           </Text>
-          {/* <SimpleModal buttonLabel="Learn More">
-            <Image src={src} alt={altText} sx={styles.memberThumb} />
-            <h1>{designation}</h1>
-            
-            <p>
-            Coming soon!
-            </p>
-            <p>{title} is fluent in {languages}.</p>
-
-            <p>我可以用广东话交谈 我可以用普通话交谈
-            </p>
-          </SimpleModal> */}
           <div>
             <button sx={styles.button} onClick={onOpenModal}>Learn more</button>
             <Modal open={open} onClose={onCloseModal} center>
@@ -47,9 +34,6 @@ export default function TeamCard({ src, altText, title, designation, social, lan
               {description}
               </p>
               <p>{title} is fluent in {languages}.</p>
-
-              <p>我可以用广东话交谈 我可以用普通话交谈
-              </p>
             </Modal>
           </div>
         </Box>
