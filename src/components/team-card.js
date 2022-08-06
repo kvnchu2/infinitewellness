@@ -26,15 +26,17 @@ export default function TeamCard({ src, altText, title, designation, social, lan
           </Text>
           <div>
             <button sx={styles.button} onClick={onOpenModal}>Learn more</button>
-            <Modal sx={styles.modal} open={open} onClose={onCloseModal} center>
-              <Image src={src} alt={altText} sx={styles.memberThumb} />
-              <h1 sx={styles.modal.h1}>{designation}</h1>
-              
-              <p sx={styles.modal.p}>
-              {description}
-              </p>
-              <p sx={styles.modal.p}>{title} is fluent in {languages}.</p>
-            </Modal>
+          
+              <Modal sx={styles.modal} open={open} onClose={onCloseModal} center>
+                <Image src={src} alt={altText} sx={styles.memberThumb} />
+                <h1 sx={styles.modal.h1}>{designation}</h1>
+                
+                <p sx={styles.modal.p}>
+                {description}
+                </p>
+                <p sx={styles.modal.p}>{title} is fluent in {languages}.</p>
+              </Modal>
+          
           </div>
         </Box>
         <Box sx={styles.socialShare} className="social__share">
@@ -50,11 +52,12 @@ export default function TeamCard({ src, altText, title, designation, social, lan
 
 const styles = {
   modal: {
+    zIndex: '1003',
     h1: {
-      fontSize: ['0.8em', null, null, null, null, '1em']
+      fontSize: ['16px', null, null, null, null, '1em']
     },
     p: {
-      fontSize: ['0.8em', null, null, null, null, '1em']
+      fontSize: ['16px', null, null, null, null, '1em']
     }
   },
   button: {

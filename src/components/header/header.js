@@ -62,6 +62,7 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
+    zIndex: '999',
     color: 'text',
     fontWeight: 'body',
     py: 4,

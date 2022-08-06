@@ -614,3 +614,6 @@ label {
 }
 
 
+:host ::ng-deep .react-responsive-modal-root {
+  z-index: 1005;
+}
