@@ -51,10 +51,10 @@ export default function TeamCard({ src, altText, title, designation, social, lan
 const styles = {
   modal: {
     h1: {
-      fontSize: ['0.8em', null, null, null, null, null]
+      fontSize: ['0.8em', null, null, null, null, '1em']
     },
     p: {
-      fontSize: ['0.8em', null, null, null, null, null]
+      fontSize: ['0.8em', null, null, null, null, '1em']
     }
   },
   button: {
