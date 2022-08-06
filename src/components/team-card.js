@@ -26,14 +26,14 @@ export default function TeamCard({ src, altText, title, designation, social, lan
           </Text>
           <div>
             <button sx={styles.button} onClick={onOpenModal}>Learn more</button>
-            <Modal open={open} onClose={onCloseModal} center>
+            <Modal sx={styles.modal} open={open} onClose={onCloseModal} center>
               <Image src={src} alt={altText} sx={styles.memberThumb} />
-              <h1>{designation}</h1>
+              <h1 sx={styles.modal.h1}>{designation}</h1>
               
-              <p>
+              <p sx={styles.modal.p}>
               {description}
               </p>
-              <p>{title} is fluent in {languages}.</p>
+              <p sx={styles.modal.p}>{title} is fluent in {languages}.</p>
             </Modal>
           </div>
         </Box>
@@ -49,6 +49,14 @@ export default function TeamCard({ src, altText, title, designation, social, lan
 }
 
 const styles = {
+  modal: {
+    h1: {
+      fontSize: ['0.8em', null, null, null, null, null]
+    },
+    p: {
+      fontSize: ['0.8em', null, null, null, null, null]
+    }
+  },
   button: {
     mt: '15px'
   },
