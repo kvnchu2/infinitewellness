@@ -40,11 +40,11 @@ const Banner = () => {
                 Trused by over 4,332 students
               </Box> */}
               <Heading as="h1">
-                Combining passion and knowledge to heal.
+                Combining passion and knowledge to heal
               </Heading>
-              {/* <Text as="p">
-                Combining passion and knowledge to heal.
-              </Text> */}
+              <Text as="p">
+                Infinite Wellness provides accessible treatments through in-home mobile visits for privacy, convenience, and comfort throughout your recovery. 
+              </Text>
               <Box sx={styles.banner.partner}>
                 <span>Connections: </span>
                 <Image src={Bcak} alt="banner image" sx={styles.banner.image}/>
@@ -52,13 +52,15 @@ const Banner = () => {
               </Box>
             </Box>
           </Box>
-          <Box sx={styles.banner.col}>
-            <Box sx={styles.banner.imageBox}>
-              <Box sx={styles.banner.imageInner}>
-                <Image src={Wellness} alt="banner image" />
-                <VideoBtn path="L9jU-IIN0ng" />
+          <Box sx={styles.banner.imageVisibility}>
+            
+              <Box sx={styles.banner.imageBox}>
+                <Box sx={styles.banner.imageInner}>
+                  <Image src={Wellness} alt="banner image" />
+                  <VideoBtn path="L9jU-IIN0ng" />
+                </Box>
               </Box>
-            </Box>
+            
           </Box>
         </Flex>
       </Container>
@@ -108,7 +110,7 @@ const styles = {
         fontWeight: 'bold',
         position: 'relative',
         width: '100%',
-        fontSize: ['23px', '30px', null, '40px', null, '45px', '60px'],
+        fontSize: ['18px', '25px', null, '35px', null, '40px', '55px'],
         maxWidth: ['500px', null, null, null, null, null, '100%'],
         '&:before': {
           content: '""',
@@ -209,12 +211,21 @@ const styles = {
       },
       pt: '80px'
     },
+    imageVisibility: {
+      pl: ['0px','120px','120px','120px','120px','120px'],
+      pr: '15px',
+      flex: ['1 1 100%', null, '0 0 50%'],
+      '@media(max-width: 414px)': {
+        visibility: 'hidden',
+        display: 'none'
+      },
+    },
     imageBox: {
       display: 'flex',
       justifyContent: ['flex-start', null, null, 'flex-end'],
       marginTop: ['60px', null, null, '0'], 
       height: '500px',
-      pr: ['0px','120px','120px','120px','120px','120px']
+      pr: ['0px','120px','120px','120px','120px','120px'],
     },
     imageInner: {
       position: 'relative',
