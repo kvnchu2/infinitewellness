@@ -108,7 +108,8 @@ export default function Contact(props)  {
                 <span>
                 <FontAwesomeIcon icon={["fas", "location-dot"]} /> Address
                 </span>
-                2044 Physiotherapy Street, V4C 2I6, Burnaby, BC
+                6700 Dunblane Ave, V5H 0J3, Burnaby, BC 
+
               </p>
             </div>
             <div className='contact-item'>
@@ -116,7 +117,7 @@ export default function Contact(props)  {
                 <span>
                 <FontAwesomeIcon icon={["fas", "phone"]} /> Phone
                 </span>{' '}
-                236-402-3040
+                236-512-5182
               </p>
             </div>
             <div className='contact-item'>
@@ -124,7 +125,7 @@ export default function Contact(props)  {
                 <span>
                 <FontAwesomeIcon icon={["fas", "envelope"]} /> Email
                 </span>{' '}
-                contact@infinitewellness.ca
+                theinfinitewellness@gmail.com
               </p>
             </div>
           </div>
