@@ -109,7 +109,6 @@ export default function Contact(props)  {
                 <FontAwesomeIcon icon={["fas", "location-dot"]} /> Address
                 </span>
                 6700 Dunblane Ave, V5H 0J3, Burnaby, BC 
-
               </p>
             </div>
             <div className='contact-item'>
@@ -117,7 +116,7 @@ export default function Contact(props)  {
                 <span>
                 <FontAwesomeIcon icon={["fas", "phone"]} /> Phone
                 </span>{' '}
-                236-512-5182
+                778-549-8885
               </p>
             </div>
             <div className='contact-item'>
