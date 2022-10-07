@@ -11,6 +11,7 @@ import Bruno from 'assets/team/bruno-savino.jpg';
 import Patrick from 'assets/team/patrick-tung.png';
 import Eunice from 'assets/team/eunice-lu.png';
 import Dilek from 'assets/team/dilek-kacar.png';
+import RuthAnn from 'assets/team/ruth-ann.png';
 import Member2 from 'assets/team/member-2.png';
 import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
@@ -162,6 +163,35 @@ const data = [
       },
     ],
     description: 'Dilek Kacar is practicing as a Physical Therapist at Synergy Health, Vancouver. She completed her Bachelor of Science in Physiotherapy and Rehabilitation at the University of Marmara in 2017. She graduated as a high honor student with a degree and worked with many patients at any ages who have neurological and orthopedic problems. She strongly believes that patient should take an active role in the treatment and cares the importance of the exercises along with the manual therapy, education and the modalities. She also cares the ongoing learning to help her patients. She has attended Soft Tissue Release Course and K-Taping course to improve her knowledge and skill. In her spare time, she plays volleyball, tennis and she loves biking during the summer time.'
+  },
+  {
+    id: 6,
+    imgSrc: RuthAnn,
+    altText: 'Ruth-Ann Chau',
+    title: 'Ruth-Ann Chau',
+    designation: 'Acupuncturist',
+    languages: 'English, Mandarin',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'facebook',
+        path: '#',
+        icon: <FaFacebookF />,
+      },
+      {
+        id: 2,
+        name: 'twitter',
+        path: '#',
+        icon: <FaTwitter />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: '#',
+        icon: <FaInstagram />,
+      },
+    ],
+    description: 'Graduated from Beijing University of Chinese Medicine, certified acupuncturists in BC (R.Ac.) Skills in treating various pain problems, emotional distress, and sports injuries. '
   },
 ];
 
