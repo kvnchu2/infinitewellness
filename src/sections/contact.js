@@ -59,6 +59,9 @@ export default function Contact(props)  {
                   get back to you as soon as possible.
                 </p>
               </div>
+              {success && (
+          <p style={{ color: "green" }}>Thanks for your message! </p>
+        )}
               <form name="contact" method="POST" action="/contact/?success=true" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
