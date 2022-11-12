@@ -13,31 +13,31 @@ const initialState = {
   message: '',
 }
 export default function Contact(props)  {
-  const [{ name, email, message }, setState] = useState(initialState)
+  // const [{ name, email, message }, setState] = useState(initialState)
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setState((prevState) => ({ ...prevState, [name]: value }))
-  }
-  const clearState = () => setState({ ...initialState })
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target
+  //   setState((prevState) => ({ ...prevState, [name]: value }))
+  // }
+  // const clearState = () => setState({ ...initialState })
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(name, email, message)
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log(name, email, message)
+  //   emailjs
+  //     .sendForm(
+  //       'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text)
+  //         clearState()
+  //       },
+  //       (error) => {
+  //         console.log(error.text)
+  //       }
+  //     )
+  // }
   return (
     <div>
       <div id='contact'>
@@ -51,7 +51,7 @@ export default function Contact(props)  {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              <form name="contact" method="POST" data-netlify="true">
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -62,7 +62,7 @@ export default function Contact(props)  {
                         className='form-control'
                         placeholder='Name'
                         required
-                        onChange={handleChange}
+                        // onChange={handleChange}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -76,7 +76,7 @@ export default function Contact(props)  {
                         className='form-control'
                         placeholder='Email'
                         required
-                        onChange={handleChange}
+                        // onChange={handleChange}
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -90,7 +90,7 @@ export default function Contact(props)  {
                     rows='4'
                     placeholder='Message'
                     required
-                    onChange={handleChange}
+                    // onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
                 </div>
