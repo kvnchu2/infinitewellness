@@ -51,7 +51,7 @@ export default function Contact(props)  {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" action="/pages/success" method="POST" data-netlify="true">
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
