@@ -53,7 +53,7 @@ export default function Contact(props)  {
                 </p>
               </div>
               
-              <form name="contact" action="/success" method="POST" data-netlify="true">
+              <form name="contact" action="/success" method="POST" data-netlify="true" enctype='application/x-www-form-urlencoded'>
               <input type="hidden" name="form-name" value="contact" />
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
