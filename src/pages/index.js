@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'theme-ui';
+import Link from "next/link"
 import { StickyProvider } from '../contexts/app/app.provider';
 import theme from 'theme';
 import SEO from 'components/seo';
@@ -22,6 +23,8 @@ import Services from '../sections/services';
 
 export default function IndexPage() {
   return (
+
+    
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <VideoProvider>
@@ -41,6 +44,9 @@ export default function IndexPage() {
             <BlogSection />
             <Subscribe /> */}
             <Modal/>
+            <Link href="/contact" >
+            <h2>Contact &rarr;</h2>
+          </Link>
           </Layout>
         </VideoProvider>
       </StickyProvider>
