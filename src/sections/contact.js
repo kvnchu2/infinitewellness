@@ -39,13 +39,6 @@ export default function Contact(props)  {
   //     )
   // }
 
-  const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
-      setSuccess(true);
-    }
-  }, []);
   return (
     <div>
       <div id='contact'>
@@ -59,10 +52,8 @@ export default function Contact(props)  {
                   get back to you as soon as possible.
                 </p>
               </div>
-              {success && (
-          <p style={{ color: "green" }}>Thanks for your message! </p>
-        )}
-              <form name="contact" method="POST" action="/contact/?success=true" data-netlify="true">
+              
+              <form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
