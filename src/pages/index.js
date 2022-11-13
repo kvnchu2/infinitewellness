@@ -44,9 +44,6 @@ export default function IndexPage() {
             <BlogSection />
             <Subscribe /> */}
             <Modal/>
-            <Link href="/contact" >
-            <h2>Contact &rarr;</h2>
-            </Link>
           </Layout>
         </VideoProvider>
       </StickyProvider>

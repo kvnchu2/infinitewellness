@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com'
+import { useForm, ValidationError } from "@formspree/react";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -7,37 +8,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 library.add(fab, faCheckSquare, faCoffee, faLocationDot, faPhone, faEnvelope)
 
-// const initialState = {
-//   name: '',
-//   email: '',
-//   message: '',
-// }
 export default function Contact(props)  {
-  // const [{ name, email, message }, setState] = useState(initialState)
+  const [state, handleSubmit] = useForm("xqknvjoy");
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target
-  //   setState((prevState) => ({ ...prevState, [name]: value }))
-  // }
-  // const clearState = () => setState({ ...initialState })
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   console.log(name, email, message)
-  //   emailjs
-  //     .sendForm(
-  //       'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text)
-  //         clearState()
-  //       },
-  //       (error) => {
-  //         console.log(error.text)
-  //       }
-  //     )
-  // }
+  if (state.succeeded) {
+    return <p>Thanks for your submission!</p>;
+  }
 
   return (
     <div>
@@ -53,29 +29,19 @@ export default function Contact(props)  {
                 </p>
               </div>
               
-              <form name="contact" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+              {/* <form onSubmit={handleSubmit}>
+                <label htmlFor="email">Email Address</label>
+                <input id="email" type="email" name="email" />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
+                <textarea id="message" name="message" />
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
+                <button type="submit" disabled={state.submitting}>
+                  Submit
+                </button>
+                <ValidationError errors={state.errors} />
+              </form> */}
 
-              {/* <form name="contact" method="POST" data-netlify="true">
+              <form onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -91,6 +57,7 @@ export default function Contact(props)  {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
+                  <ValidationError prefix="Name" field="name" errors={state.errors} />
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
@@ -105,6 +72,7 @@ export default function Contact(props)  {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
                 <div className='form-group'>
                   <textarea
@@ -117,12 +85,14 @@ export default function Contact(props)  {
                     // onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
                 <div id='success'></div>
-                <button type='submit' className='btn btn-custom btn-lg'>
+                <button type='submit' disabled={state.submitting} className='btn btn-custom btn-lg'>
                   Send Message
                 </button>
-              </form> */}
+                <ValidationError errors={state.errors} />
+              </form>
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
