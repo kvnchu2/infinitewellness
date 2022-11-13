@@ -46,7 +46,7 @@ export default function IndexPage() {
             <Modal/>
             <Link href="/contact" >
             <h2>Contact &rarr;</h2>
-          </Link>
+            </Link>
           </Layout>
         </VideoProvider>
       </StickyProvider>
