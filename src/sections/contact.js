@@ -7,11 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 library.add(fab, faCheckSquare, faCoffee, faLocationDot, faPhone, faEnvelope)
 
-const initialState = {
-  name: '',
-  email: '',
-  message: '',
-}
+// const initialState = {
+//   name: '',
+//   email: '',
+//   message: '',
+// }
 export default function Contact(props)  {
   // const [{ name, email, message }, setState] = useState(initialState)
 
