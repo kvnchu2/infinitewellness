@@ -105,14 +105,14 @@ export default function Contact(props)  {
                 6700 Dunblane Ave, V5H 0J3, Burnaby, BC 
               </p>
             </div>
-            <div className='contact-item'>
+            {/* <div className='contact-item'>
               <p>
                 <span>
                 <FontAwesomeIcon icon={["fas", "phone"]} /> Phone
                 </span>{' '}
                 778-549-8885
               </p>
-            </div>
+            </div> */}
             <div className='contact-item'>
               <p>
                 <span>
