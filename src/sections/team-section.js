@@ -48,35 +48,35 @@ const data = [
   //   ],
   //   description: 'Johnny completed his Master’s degree in Physical Therapy at Queen’s University, and bachelor’s degree in Kinesiology at the University of British Columbia. Johnny started his career in public practice (hospitals) and private clinics in Kingston and the Greater Toronto Area. In addition to his clinical experience, Johnny spent four years as a behavioral interventionist, and was a research assistant for a Parkinson’s disease and concussion study at UBC. Johnny has a variety of interests including treating patients with MSK (musculoskeletal), cardiopulmonary diseases, neurological conditions, vestibular issues, and concussion. He also enjoys helping patients who have injuries from sports, motor vehicle accidents, and other chronic conditions. In his spare time Johnny enjoys playing basketball, table tennis, tennis and badminton.'
   // },
-  {
-    id: 2,
-    imgSrc: Bruno,
-    altText: 'Bruno Savino',
-    title: 'Bruno Savino',
-    designation: 'Kinesiologist',
-    languages: 'English, Spanish, Portugese',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-    description: 'Coming soon!'
-  },
+  // {
+  //   id: 2,
+  //   imgSrc: Bruno,
+  //   altText: 'Bruno Savino',
+  //   title: 'Bruno Savino',
+  //   designation: 'Kinesiologist',
+  //   languages: 'English, Spanish, Portugese',
+  //   socialProfile: [
+  //     {
+  //       id: 1,
+  //       name: 'facebook',
+  //       path: '#',
+  //       icon: <FaFacebookF />,
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'twitter',
+  //       path: '#',
+  //       icon: <FaTwitter />,
+  //     },
+  //     {
+  //       id: 3,
+  //       name: 'instagram',
+  //       path: '#',
+  //       icon: <FaInstagram />,
+  //     },
+  //   ],
+  //   description: 'Coming soon!'
+  // },
   {
     id: 3,
     imgSrc: Eunice,
